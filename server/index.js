@@ -23,6 +23,7 @@ app.options('*', cors());
 
 app.get('/products', (req, res) => {
   let products = seed.sampleData;
+  console.log(req);
   res.status(200).send(products);
   // products.selectAll(function(err, data) {
   //   if (err) {
